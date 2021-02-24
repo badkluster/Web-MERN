@@ -9,12 +9,14 @@ function MenuSider(props) {
   const { menuCollapsed, location } = props;
   const { Sider } = Layout;
 
+  // console.log(location);
+
   return (
     <Sider className="admin-sider" collapsed={menuCollapsed}>
       <Menu
         theme="dark"
         mode="inline"
-        defaultSelectedKeys={[location.phathname]}
+        defaultSelectedKeys={[location.pathname]}
       >
         <Menu.Item key="/admin">
           <Link to={"/admin"}>

@@ -5,7 +5,6 @@ import {
   MenuUnfoldOutlined,
   PoweroffOutlined,
   MenuOutlined,
-  WindowsFilled,
 } from "@ant-design/icons";
 import { logout } from "../../../api/auth";
 

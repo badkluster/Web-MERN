@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, Tabs } from "antd";
 import { Redirect } from "react-router-dom";
-import Logo from "../../../assets/img/png/logo sinaptic.png";
+import Logo from "../../../assets/img/png/logojor1.png";
 import RegisterForm from "../../../component/Admin/RegisterForm";
 import LoginForm from "../../../component/Admin/LoginForm";
 import { getAccessTokenApi } from "../../../api/auth";

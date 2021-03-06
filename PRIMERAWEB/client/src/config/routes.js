@@ -4,6 +4,7 @@ import LayoutBasic from "../layouts/layoutsBasic";
 // Admin Pages
 import AdminHome from "../pages/Admin";
 import AdminSingIn from "../pages/Admin/SingIn";
+import AdminMenuWeb from "../pages/Admin/MenuWeb";
 
 // Pages
 import Home from "../pages/Home";
@@ -32,6 +33,11 @@ const routes = [
       {
         path: "/admin/users",
         component: AdminUsers,
+        exact: true,
+      },
+      {
+        path: "/admin/menu",
+        component: AdminMenuWeb,
         exact: true,
       },
       {

@@ -9,7 +9,7 @@ import {
 import { logout } from "../../../api/auth";
 
 import "./MenuTop.scss";
-import JorLogo from "../../../assets/img/png/logo sinaptic.png";
+import JorLogo from "../../../assets/img/png/logosimple.jpeg";
 
 export default function MenuTop(props) {
   const { menuCollapsed, setMenuCollapsed } = props;

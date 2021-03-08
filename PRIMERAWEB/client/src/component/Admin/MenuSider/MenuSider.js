@@ -34,7 +34,7 @@ function MenuSider(props) {
         <Menu.Item className="menu-text" key="/admin/menu">
           <Link to={"/admin/menu"}>
             <MenuOutlined />
-            <span className="nav-text"> Menu </span>
+            <span className="nav-text"> Menú </span>
           </Link>
         </Menu.Item>
       </Menu>

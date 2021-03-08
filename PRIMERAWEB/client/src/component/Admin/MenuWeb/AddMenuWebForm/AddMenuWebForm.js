@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Select, notification } from "antd";
-import { FontSizeOutlined } from "@ant-design/icons";
+import { FontSizeOutlined, LinkOutlined } from "@ant-design/icons";
 import { addMenuApi } from "../../../../api/menu";
 import { getAccessTokenApi } from "../../../../api/auth";
 
@@ -83,6 +83,7 @@ function AddForm(props) {
       </Form.Item>
       <Form.Item>
         <Input
+          prefix={<LinkOutlined />}
           addonBefore={selectBefore}
           placeholder="URL"
           value={menuWebData.url}

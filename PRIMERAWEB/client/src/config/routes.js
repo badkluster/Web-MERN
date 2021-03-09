@@ -5,6 +5,7 @@ import LayoutBasic from "../layouts/layoutsBasic";
 import AdminHome from "../pages/Admin";
 import AdminSingIn from "../pages/Admin/SingIn";
 import AdminMenuWeb from "../pages/Admin/MenuWeb";
+import MenuNewsletter from "../pages/Admin/MenuNewsletter";
 
 // Pages
 import Home from "../pages/Home";
@@ -39,6 +40,11 @@ const routes = [
       {
         path: "/admin/menu",
         component: AdminMenuWeb,
+        exact: true,
+      },
+      {
+        path: "/admin/get-newsletter",
+        component: MenuNewsletter,
         exact: true,
       },
       {

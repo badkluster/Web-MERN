@@ -37,6 +37,12 @@ function MenuSider(props) {
             <span className="nav-text"> Menú </span>
           </Link>
         </Menu.Item>
+        <Menu.Item className="menu-text" key="/admin/get-newsletter">
+          <Link to={"/admin/get-newsletter"}>
+            <MenuOutlined />
+            <span className="nav-text"> Newsletter </span>
+          </Link>
+        </Menu.Item>
       </Menu>
     </Sider>
   );

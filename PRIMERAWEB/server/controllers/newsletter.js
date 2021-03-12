@@ -28,7 +28,7 @@ function suscribeEmail(req, res) {
 }
 
 function getNewsletter(req, res) {
-  Menu.find()
+  Newsletter.find()
     .sort({ order: "asc" })
     .exec((err, newsletterStored) => {
       if (err) {
@@ -39,13 +39,35 @@ function getNewsletter(req, res) {
             message: "No se ha encontrado ningun Correo",
           });
         } else {
-          res.status(200).send({ menu: newsletterStored });
+          res.status(200).send({ newsletter: newsletterStored });
         }
       }
     });
 }
 
+function deleteNewsletter(req, res) {
+  const { id } = req.params;
+
+  Course.findByIdAndRemove(id, (err, newsletterDeleted) => {
+    if (err) {
+      res.status(500).send({ code: 500, message: "Error del servidor." });
+    } else {
+      if (!newsletterDeleted) {
+        res
+          .status(404)
+          .send({ code: 404, message: "Newsletter no encontrado." });
+      } else {
+        res.status(200).send({
+          code: 200,
+          message: "El Newsletter ha sido elinado correctamente.",
+        });
+      }
+    }
+  });
+}
+
 module.exports = {
   suscribeEmail,
   getNewsletter,
+  deleteNewsletter,
 };

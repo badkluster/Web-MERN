@@ -6,6 +6,8 @@ import AdminHome from "../pages/Admin";
 import AdminSingIn from "../pages/Admin/SingIn";
 import AdminMenuWeb from "../pages/Admin/MenuWeb";
 import MenuNewsletter from "../pages/Admin/MenuNewsletter";
+import AdminCourses from "../pages/Admin/Courses";
+import AdminBlog from "../pages/Admin/Blog";
 
 // Pages
 import Home from "../pages/Home";
@@ -45,6 +47,16 @@ const routes = [
       {
         path: "/admin/get-newsletter",
         component: MenuNewsletter,
+        exact: true,
+      },
+      {
+        path: "/admin/courses",
+        component: AdminCourses,
+        exact: true,
+      },
+      {
+        path: "/admin/blog",
+        component: AdminBlog,
         exact: true,
       },
       {

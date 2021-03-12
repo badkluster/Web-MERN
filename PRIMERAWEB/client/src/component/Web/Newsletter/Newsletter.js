@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Form, Input, Button, notification } from "antd";
-import {
-  suscribeNewsletterApi,
-  getNewsletterApi,
-} from "../../../api/newsletter";
+import { suscribeNewsletterApi } from "../../../api/newsletter";
 import { MailOutlined } from "@ant-design/icons";
 
 import "./Newsletter.scss";

@@ -33,22 +33,22 @@ function RenderListLeft() {
   return (
     <ul>
       <li>
-        <a href="#">
+        <a href="/# ">
           <BookOutlined className="icon-nav-nav" /> Cursos Online
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/# ">
           <CodeOutlined className="icon-nav-nav" /> Desarrollo Web
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/# ">
           <DatabaseOutlined className="icon-nav-nav" /> Base de Datos
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/# ">
           <RightOutlined className="icon-nav-nav" /> Politica de Privacidad
         </a>
       </li>
@@ -60,22 +60,22 @@ function RenderListRight() {
   return (
     <ul>
       <li>
-        <a href="#">
-          <HddOutlined className="icon-nav-nav" /> Sistemas / Servidores
+        <a href="/# ">
+          <HddOutlined className="icon-nav-nav" /> Sistemas
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/#">
           <AppstoreOutlined className="icon-nav-nav" /> CMS
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/#">
           <UserOutlined className="icon-nav-nav" /> Porfolio
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/#">
           <RightOutlined className="icon-nav-nav" /> Política de Cookies
         </a>
       </li>

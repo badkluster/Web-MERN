@@ -41,8 +41,8 @@ export function getNewsletterApi(token) {
     });
 }
 
-export function deleteNewsletterApi(token, email) {
-  const url = `${basePath}/${apiVersion}/delete-newsletter/${email}`;
+export function deleteNewsletterApi(token, id) {
+  const url = `${basePath}/${apiVersion}/delete-newsletter/${id}`;
 
   const params = {
     method: "DELETE",

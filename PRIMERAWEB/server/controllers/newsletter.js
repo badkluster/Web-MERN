@@ -48,7 +48,7 @@ function getNewsletter(req, res) {
 function deleteNewsletter(req, res) {
   const { id } = req.params;
 
-  Course.findByIdAndRemove(id, (err, newsletterDeleted) => {
+  Newsletter.findByIdAndRemove(id, (err, newsletterDeleted) => {
     if (err) {
       res.status(500).send({ code: 500, message: "Error del servidor." });
     } else {

@@ -7,7 +7,7 @@ const api = express.Router();
 api.post("/suscribe-newsletter/:email", NewsletterController.suscribeEmail);
 api.get("/get-newsletter", NewsletterController.getNewsletter);
 api.delete(
-  "/delete-Newsletter/:email",
+  "/delete-newsletter/:id",
   [md_auth.ensureAuth],
   NewsletterController.deleteNewsletter
 );

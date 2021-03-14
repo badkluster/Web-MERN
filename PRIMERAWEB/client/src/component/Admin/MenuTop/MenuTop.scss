@@ -7,10 +7,14 @@
     color: #fff;
     background-color: transparent;
     border: none;
+    position: absolute;
+    left: 210px;
+    top: 30px;
 
     & :hover {
       color: $primary-color;
       border: none;
+      background-color: transparent;
     }
     & :focus,
     & :active {
@@ -31,3 +35,17 @@
     right: 0;
   }
 }
+
+// .btn-collapsed {
+//   position: absolute;
+//   left: 210px;
+//   top: 30px;
+//   & :hover {
+//     color: $primary-color;
+//     border: none;
+//   }
+//   & :focus,
+//   & :active {
+//     color: #fff;
+//   }
+// }

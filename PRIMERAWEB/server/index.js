@@ -7,7 +7,7 @@ mongoose.set("useCreateIndex", true);
 mongoose.set("useFindAndModify", false);
 
 mongoose.connect(
-  `mongodb://${IP_SERVER}:${PORT_DB}/jorgedominguez`,
+  `mongodb+srv://badkluster:Op3r4c10n3s@webpersonalcurso.8yw0i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err, res) => {
     if (err) {
@@ -15,7 +15,7 @@ mongoose.connect(
     } else {
       console.log("la conexion a la base de datos es correcta.");
 
-      app.listen(port, () => {
+      app.listen(process.env.PORT, "0.0.0.0", () => {
         console.log("******************");
         console.log("*****API REST*****");
         console.log("******************");

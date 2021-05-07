@@ -1,5 +1,5 @@
 # Web-MERN
-mi primera web
+mi primera web con tecnologias MERN
 
 
 Creo Pagina web con las tecnologias MERN (MongoDb, Express, Reacjs y Nodejs)
